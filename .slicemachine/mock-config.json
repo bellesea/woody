@@ -5,10 +5,27 @@
     "ImageGallery": {},
     "FeaturedImage": {},
     "TextSlice": {},
-    "QuoteSlice": {}
+    "QuoteSlice": {},
+    "Header": {}
   },
   "_cts": {
     "page": {},
-    "home-page": {}
+    "home-page": {},
+    "menu": {
+      "menu_links": {
+        "title": {
+          "config": {
+            "patternType": "PARAGRAPH",
+            "blocks": 1
+          }
+        },
+        "description": {
+          "config": {
+            "patternType": "PARAGRAPH",
+            "blocks": 1
+          }
+        }
+      }
+    }
   }
 }

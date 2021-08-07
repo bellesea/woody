@@ -6,10 +6,10 @@ const Layout = ({ children, menu }) => {
   return (
     <div>
       <Head>
-        <title> Prismic Next.js Multi Page Website </title>
+        <title> Woody Keppel </title>
       </Head>
-      <Header menu={menu} />
       <main>{children}</main>
+      <Header menu={menu} />
     </div>
   );
 };

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+
 * {
   -webkit-font-smoothing: antialiased;
 }
@@ -9,16 +11,19 @@
 }
 
 ::selection {
-  background: #fff7c7; /* WebKit/Blink Browsers */
+  background: #A89371;
+  color: #fff; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #fff7c7; /* Gecko Browsers */
+  background: #A89371;
+  color: #fff; /* Gecko Browsers */
 }
 
 /*
  * Globals
  */
 body {
+  background-color: #E9E6DD;
   color: #72767b;
   font-family: "Lato", sans-serif;
   font-size: 16px;
@@ -42,14 +47,15 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   font-family: "Lato", sans-serif;
 }
 h1 {
+  font-family: 'Fraunces', serif;
   font-size: 42px;
   font-weight: normal;
   color: #484d52;
-  line-height: 52px;
   letter-spacing: 1.14px;
   margin-bottom: 1rem;
 }

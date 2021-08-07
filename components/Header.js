@@ -4,49 +4,27 @@ import { Link } from 'prismic-reactjs'
 
 const Header = ({ menu = [] }) => (
     <header className="site-header">
-      <a href="/" className="logo">
+      {/* <a href="/" className="logo">
         {RichText.asText(menu.data.title)}
-      </a>
-      <Links menuLinks={menu.data.menu_links} />
+      </a> */}
+      <div className="container">
+        <Links menuLinks={menu.data.menu_links} />
+      </div>
       <style jsx>{`
-        .site-header {
-          height: 30px;
-          padding: 20px 0;
-          color: #484d52;
-          font-weight: 700;
+        .container {
+          margin-left: 10vw;
+          margin-right: 10vw;
+          column-count: 3;
+          column-gap: 27px;
         }
-        .site-header a {
-          color: #484d52;
-          font-weight: 700;
-        }
-        .site-header a:hover {
-          color: #72767B;
-        }
-      
-        .site-header .logo {
-          display: inline-block;
-          font-size: 22px;
-          font-weight: 900;
-        }
-        @media (max-width: 1060px) {
-          .site-header {
-            padding-left: 20px;
-            padding-right: 20px;
+        @media (max-width: 768px) {
+          .container {
+            margin-left: 5vw;
+            margin-right: 5vw;
+            column-count: 1;
+            column-gap: 27px;
           }
         }
-        @media (max-width: 767px) {
-          .site-header {
-            height: auto;
-          }
-          .site-header {
-            position: absolute;
-            left: 0;
-            right: 0;
-          }
-          .site-header .logo {
-            display: block;
-            text-align: center;
-          }
         `}</style>
     </header>
 );
@@ -58,31 +36,123 @@ const Links = ({menuLinks}) => {
         <ul>
           {menuLinks.map((menuLink, index) => (
             <li key={`menulink-${index}`}>
-              <a href={Link.url(menuLink.link)}>
-                {RichText.asText(menuLink.label)}
-              </a>
+              <div className="card">
+                <img src={menuLink.image.url} alt={menuLink.image.alt} />
+                <a className="word"><h5>{RichText.asText(menuLink.title)}</h5></a>
+                <div className="overlay-container">
+                  <div className="content">
+                    <h4>{RichText.asText(menuLink.title)}</h4>
+                    <p>{RichText.asText(menuLink.description)}</p>
+                    <a href={Link.url(menuLink.link)}>
+                      {RichText.asText(menuLink.label)} &#10140;
+                    </a>
+                  </div>
+                </div>
+              </div>
             </li>
           ))}
         </ul>
         <style jsx>{`
-          nav {
-            float: right;
+          .card {
+            position: relative;
+            border-radius: 37px;
+            margin-bottom: 27px;
+            display: grid;
+            grid-template-rows: 1fr auto;
+            z-index: 1;
           }
+
+          .card > img {
+            grid-row: 1 / -1;
+            grid-column: 1;
+          }
+
+          img {
+            max-width: 100%;
+            border-radius: 25px;
+            display: block;
+            z-index: 2;
+          }
+
+          .word {
+            grid-row: 2;
+            grid-column: 1;
+            justify-self: start;
+            z-index: 3;
+            background-image: linear-gradient(180deg, rgb(196, 196, 196, 0), rgb(43, 43, 43, 0.7));
+            width: 100%;
+            border-radius: 0 0 25px 25px;
+          }
+
+          .word h5 {
+            positon: absolute;
+            margin: 0;
+            padding: 40px 0 10px 10%;
+            font-family: Fraunces;
+            font-size: 1.1rem;
+            color: #E9E6DD;
+          }
+
+          .card:hover .word {
+            display: none;
+          }
+
+          .overlay-container {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .9s ease;
+            background-image: linear-gradient(180deg, rgb(207, 160, 127, 0.7), rgb(136, 83, 61, 0.9));
+            z-index: 10;
+            border-radius: 25px;
+          }
+
+          .card:hover .overlay-container {
+            opacity: 1;
+          }
+
+          .content {
+            margin: 6%;
+            word-break: break-all;
+            color: #E9E6DD;
+          }
+
+          .content h4 {
+            font-family: Fraunces;
+            font-size: 1.2rem;
+            margin: 0;
+            padding: 0;
+          }
+
+          .content p {
+            margin: 3px 0 3px 0;
+          }
+
+          .content a {
+            position: absolute;
+            left: 15px;
+            bottom: 15px;
+            border: solid 1px #E9E6DD;
+            color: #E9E6DD;
+            font-weight: bold;
+            margin: 0;
+            padding: 3px 10px 3px 10px;
+            border-radius: 50px;
+          }
+
           nav ul {
             margin: 0;
             padding-left: 0;
           }
           nav li {
             display: inline-block;
-            margin-left: 40px;
           }
-          nav li a {
-            color: #484d52;
-            font-weight: 700;
-          }
-          nav li a:hover {
-            color: #72767B;
-          }
+
           @media (max-width: 767px) {
             nav {
               float: none;

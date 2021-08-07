@@ -12,18 +12,18 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=727&h=402&fit=crop"
+          "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=727&h=402&fit=crop"
         },
         "imageDescription": [
           {
             "type": "paragraph",
-            "text": "Duis non quis magna deserunt eiusmod.",
+            "text": "Est minim dolore ut magna qui excepteur deserunt.",
             "spans": []
           }
         ],
         "link": {
           "link_type": "Web",
-          "url": "https://prismic.io"
+          "url": "http://google.com"
         }
       },
       {
@@ -34,12 +34,12 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8?w=727&h=402&fit=crop"
+          "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=727&h=402&fit=crop"
         },
         "imageDescription": [
           {
             "type": "paragraph",
-            "text": "Eiusmod commodo consequat consequat aliquip veniam quis incididunt consequat amet.",
+            "text": "Pariatur elit cillum ea aliqua veniam dolor Lorem ullamco. Excepteur ex aute esse et ullamco.",
             "spans": []
           }
         ],
@@ -56,40 +56,18 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=727&h=402&fit=crop"
+          "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=727&h=402&fit=crop"
         },
         "imageDescription": [
           {
             "type": "paragraph",
-            "text": "Officia cillum ullamco in voluptate irure. Ad reprehenderit eiusmod ipsum id ut dolore in. Irure commodo pariatur ad eu anim nostrud occaecat veniam.",
+            "text": "Eiusmod pariatur mollit eu nulla Lorem duis reprehenderit sit deserunt. Aliquip minim amet officia et irure enim cupidatat do laboris magna magna. Officia do eiusmod et cupidatat reprehenderit elit sint cillum laborum aliquip laboris mollit qui aliquip qui.",
             "spans": []
           }
         ],
         "link": {
           "link_type": "Web",
-          "url": "http://twitter.com"
-        }
-      },
-      {
-        "image": {
-          "dimensions": {
-            "width": 727,
-            "height": 402
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=727&h=402&fit=crop"
-        },
-        "imageDescription": [
-          {
-            "type": "paragraph",
-            "text": "Quis tempor occaecat duis aliquip nostrud elit pariatur duis cillum id.",
-            "spans": []
-          }
-        ],
-        "link": {
-          "link_type": "Web",
-          "url": "https://prismic.io"
+          "url": "https://slicemachine.dev"
         }
       }
     ],
@@ -97,7 +75,7 @@
       "galleryTitle": [
         {
           "type": "heading2",
-          "text": "Enhance transparent channels",
+          "text": "Deploy killer markets",
           "spans": []
         }
       ]
