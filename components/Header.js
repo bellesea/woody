@@ -121,7 +121,7 @@ const Links = ({menuLinks}) => {
             border-radius: 25px;
           }
 
-          .card:hover.overlay-container {
+          .card:hover .overlay-container {
             opacity: 1;
           }
 
