@@ -30,9 +30,6 @@ const Header = ({ menu = [] }) => (
 );
 
 const Links = ({menuLinks}) => {
-  if (!("ontouchstart" in document.documentElement)) {
-    document.documentElement.className += " no-touch";
-    }
 
   if (menuLinks) {
     return (
