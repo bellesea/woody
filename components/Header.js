@@ -98,8 +98,10 @@ const Links = ({menuLinks}) => {
               padding: 40px 0 10px 0px;
             }
           }
-
-          .card:hover .word {
+          @media(hover: hover) and (pointer: fine) {
+            
+          }
+          .card:hover, .card:active .word {
             display: none;
           }
 
@@ -118,7 +120,7 @@ const Links = ({menuLinks}) => {
             border-radius: 25px;
           }
 
-          .card:hover .overlay-container {
+          .card:hover, .card:active .overlay-container {
             opacity: 1;
           }
 
