@@ -30,6 +30,10 @@ const Header = ({ menu = [] }) => (
 );
 
 const Links = ({menuLinks}) => {
+  if (!("ontouchstart" in document.documentElement)) {
+    document.documentElement.className += " no-touch";
+    }
+
   if (menuLinks) {
     return (
       <nav>
@@ -101,7 +105,7 @@ const Links = ({menuLinks}) => {
           @media(hover: hover) and (pointer: fine) {
             
           }
-          .card:hover, .card:active .word {
+          .card:hover .word {
             display: none;
           }
 
@@ -120,7 +124,7 @@ const Links = ({menuLinks}) => {
             border-radius: 25px;
           }
 
-          .card:hover, .card:active .overlay-container {
+          .card:hover.overlay-container {
             opacity: 1;
           }
 
