@@ -17,7 +17,7 @@ const Header = ({ menu = [] }) => (
           column-count: 3;
           column-gap: 27px;
         }
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
           .container {
             margin-left: 5vw;
             margin-right: 5vw;
@@ -56,6 +56,7 @@ const Links = ({menuLinks}) => {
         <style jsx>{`
           .card {
             position: relative;
+            text-align: centre;
             border-radius: 37px;
             margin-bottom: 27px;
             display: grid;
@@ -94,7 +95,7 @@ const Links = ({menuLinks}) => {
             color: #E9E6DD;
           }
 
-          @media (max-width: 768px) {
+          @media (max-width: 767px) {
             .word h5 {
               padding: 40px 0 10px 0px;
             }
