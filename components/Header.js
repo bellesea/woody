@@ -87,7 +87,7 @@ const Links = ({menuLinks}) => {
           .word h5 {
             positon: absolute;
             margin: 0;
-            padding: 40px 0 10px 10%;
+            padding: 40px 0 10px 20px;
             font-family: Fraunces;
             font-size: 1.1rem;
             color: #E9E6DD;
