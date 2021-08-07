@@ -93,6 +93,12 @@ const Links = ({menuLinks}) => {
             color: #E9E6DD;
           }
 
+          @media (max-width: 768px) {
+            .word h5 {
+              padding: 40px 0 10px 0px;
+            }
+          }
+
           .card:hover .word {
             display: none;
           }

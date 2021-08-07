@@ -33,11 +33,12 @@ const Header = ({ slice }) => (
 
         @media (max-width: 768px) {
           .title {
-            font-size: 3em;
+            font-size: 2.5em;
           }
 
           .description {
             font-size: 1em;
+            margin: 25px;
           }
         }
     `}</style>
