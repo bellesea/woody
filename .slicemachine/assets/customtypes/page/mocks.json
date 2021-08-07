@@ -1,0 +1,76 @@
+{
+  "id": "b0e62489-4417-4f8b-9d8e-819302b08f97",
+  "uid": "saepe-sit-est",
+  "type": "page",
+  "data": {
+    "meta_title": "repurpose front-end architectures",
+    "meta_description": "target cross-platform systems",
+    "social_cards": [
+      {
+        "social_card_image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=900&h=500&fit=crop"
+        },
+        "social_card_title": "leverage magnetic web services",
+        "social_card_description": "implement viral vortals"
+      },
+      {
+        "social_card_image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb?w=900&h=500&fit=crop"
+        },
+        "social_card_title": "mesh next-generation infomediaries",
+        "social_card_description": "embrace efficient e-commerce"
+      },
+      {
+        "social_card_image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&h=500&fit=crop"
+        },
+        "social_card_title": "integrate killer infrastructures",
+        "social_card_description": "unleash virtual methodologies"
+      },
+      {
+        "social_card_image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=900&h=500&fit=crop"
+        },
+        "social_card_title": "synthesize e-business bandwidth",
+        "social_card_description": "evolve next-generation initiatives"
+      },
+      {
+        "social_card_image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&h=500&fit=crop"
+        },
+        "social_card_title": "mesh efficient web-readiness",
+        "social_card_description": "maximize e-business schemas"
+      }
+    ]
+  }
+}

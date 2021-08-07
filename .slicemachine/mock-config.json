@@ -1,0 +1,14 @@
+{
+  "slices": {
+    "BannerSlice": {},
+    "FullWidthImage": {},
+    "ImageGallery": {},
+    "FeaturedImage": {},
+    "TextSlice": {},
+    "QuoteSlice": {}
+  },
+  "_cts": {
+    "page": {},
+    "home-page": {}
+  }
+}
