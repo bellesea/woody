@@ -8,10 +8,12 @@ function MyModal({title, description, link, label, link2, label2, link3, label3,
   
   function closeModal() {
     setIsOpen(false)
+    unBlur();
   }
 
   function openModal() {
     setIsOpen(true)
+    blur();
   }
 
   function unBlur() {
@@ -31,7 +33,7 @@ function MyModal({title, description, link, label, link2, label2, link3, label3,
               ref={completeButtonRef}
               type="button"
               className="button"
-              onClick={() => { openModal(); blur();}}
+              onClick={() => { openModal(); }}
               >
               {title} +
           </button>
@@ -62,7 +64,7 @@ function MyModal({title, description, link, label, link2, label2, link3, label3,
                   <a href={link7}><h4>{label7}</h4></a>
                   <a href={link8}><h4>{label8}</h4></a>
                 </div>
-              <button onClick={() => { closeModal(); unBlur();}}><p>close</p></button>
+              <button onClick={() => { closeModal(); }}>close</button>
               </div>
             </Dialog>
         </Transition>
