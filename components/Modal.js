@@ -1,7 +1,7 @@
-import { useState, useRef } from 'react'
-import { Dialog, Transition } from '@headlessui/react'
+import { useState } from 'react'
+import { Dialog } from '@headlessui/react'
 
-function MyModal({title, description, link, label, link2, label2, link3, label3, link4, label4, link5, label5, link6, label6, link7, label7, link8, label8, image2, image2Alt, image3, image3Alt, image4, image4Alt}) {
+export default function MyModal({title, description, link, label, link2, label2, link3, label3, link4, label4, link5, label5, link6, label6, link7, label7, link8, label8, image2, image2Alt, image3, image3Alt, image4, image4Alt}) {
   let [isOpen, setIsOpen] = useState(false)
   let completeButtonRef = useRef(null)
 
@@ -31,36 +31,32 @@ function MyModal({title, description, link, label, link2, label2, link3, label3,
               {title} +
           </button>
         </div>
-        <Transition show={isOpen}>
         <Dialog
-              initialFocus={completeButtonRef}
-              open={isOpen}
-              onClose={closeModal}
-              as="div"
-              className="dialog-container"
-              data-backdrop="static"
-              >
-              <Dialog.Overlay />
-              <div className="dialog-content">
-                <Dialog.Title ><h3 className="title">{title}</h3></Dialog.Title>
-                <div className="inner">
-                  <p>{description}</p>
-                  <a href={link}><h4>{label}</h4></a>
-                  <img src={image2} alt={image2Alt} />
-                  <a href={link2}><h4>{label2}</h4></a>
-                  <img src={image3} alt={image3Alt} />
-                  <a href={link3}><h4>{label3}</h4></a>
-                  <img src={image4} alt={image4Alt} />
-                  <a href={link4}><h4>{label4}</h4></a>
-                  <a href={link5}><h4>{label5}</h4></a>
-                  <a href={link6}><h4>{label6}</h4></a>
-                  <a href={link7}><h4>{label7}</h4></a>
-                  <a href={link8}><h4>{label8}</h4></a>
-                </div>
-              <button onClick={closeModal}>close</button>
-              </div>
-            </Dialog>
-        </Transition>
+          onClose={closeModal}
+          as="div"
+          className="dialog-container"
+          data-backdrop="static"
+        >
+          <Dialog.Overlay />
+          <div className="dialog-content">
+            <Dialog.Title ><h3 className="title">{title}</h3></Dialog.Title>
+            <div className="inner">
+              <p>{description}</p>
+              <a href={link}><h4>{label}</h4></a>
+              <img src={image2} alt={image2Alt} />
+              <a href={link2}><h4>{label2}</h4></a>
+              <img src={image3} alt={image3Alt} />
+              <a href={link3}><h4>{label3}</h4></a>
+              <img src={image4} alt={image4Alt} />
+              <a href={link4}><h4>{label4}</h4></a>
+              <a href={link5}><h4>{label5}</h4></a>
+              <a href={link6}><h4>{label6}</h4></a>
+              <a href={link7}><h4>{label7}</h4></a>
+              <a href={link8}><h4>{label8}</h4></a>
+            </div>
+          <button onClick={closeModal}>close</button>
+          </div>
+        </Dialog>
 
           <style jsx>{`
             .button {
@@ -115,5 +111,3 @@ function MyModal({title, description, link, label, link2, label2, link3, label3,
       </div>
   )
 }
-
-export default MyModal
