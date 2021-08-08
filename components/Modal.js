@@ -39,12 +39,20 @@ export default function Modal({title, description, link, label, link2, label2, l
             <div className="inner">
               <p>{description}</p>
               <a href={link}><h4>{label}</h4></a>
-              <img src={image2} alt={image2Alt} />
-              <a href={link2}><h4>{label2}</h4></a>
-              <img src={image3} alt={image3Alt} />
-              <a href={link3}><h4>{label3}</h4></a>
-              <img src={image4} alt={image4Alt} />
-              <a href={link4}><h4>{label4}</h4></a>
+              <div style={{ display: 'flex', flexDirection: 'row', gap: '10px' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '1em' }}>
+                  <img src={image2} alt={image2Alt} />
+                  <a href={link2}><h4>{label2}</h4></a>
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '1em' }}>
+                  <img src={image3} alt={image3Alt} />
+                  <a href={link3}><h4>{label3}</h4></a>
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '1em' }}>
+                  <img src={image4} alt={image4Alt} />
+                  <a href={link4}><h4>{label4}</h4></a>
+                </div>
+              </div>
               <a href={link5}><h4>{label5}</h4></a>
               <a href={link6}><h4>{label6}</h4></a>
               <a href={link7}><h4>{label7}</h4></a>
