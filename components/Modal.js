@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 
-function MyModal({title, description, link, label, link2, label2, link3, label3, link4, label4, link5, label5, link6, label6, image2, image2Alt, image3, image3Alt, image4, image4Alt}) {
+function MyModal({title, description, link, label, link2, label2, link3, label3, link4, label4, link5, label5, link6, label6, link7, label7, link8, label8, image2, image2Alt, image3, image3Alt, image4, image4Alt}) {
   let [isOpen, setIsOpen] = useState(false)
   let completeButtonRef = useRef(null)
 
@@ -48,6 +48,8 @@ function MyModal({title, description, link, label, link2, label2, link3, label3,
                   <a href={link4}><h4>{label4}</h4></a>
                   <a href={link5}><h4>{label5}</h4></a>
                   <a href={link6}><h4>{label6}</h4></a>
+                  <a href={link7}><h4>{label7}</h4></a>
+                  <a href={link8}><h4>{label8}</h4></a>
                 </div>
               <button onClick={closeModal}><p>close</p></button>
               </div>
@@ -112,6 +114,10 @@ function MyModal({title, description, link, label, link2, label2, link3, label3,
             @media (max-width: 767px) {
               .button {
                 margin: 0 0 13px 0;
+              }
+
+              .inner {
+                max-height: 23vh !important;
               }
             }
           `}</style>

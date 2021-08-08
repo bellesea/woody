@@ -55,6 +55,10 @@ const Links = ({menuLinks}) => {
                 label5={RichText.asText(menuLink.label5)}
                 link6={Link.url(menuLink.link6)}
                 label6={RichText.asText(menuLink.label6)}
+                link7={Link.url(menuLink.link7)}
+                label7={RichText.asText(menuLink.label7)}
+                link8={Link.url(menuLink.link8)}
+                label8={RichText.asText(menuLink.label8)}
                 image2={menuLink.image2.url}
                 image2Alt = {menuLink.image2.alt}
                 image3={menuLink.image3.url}
@@ -111,72 +115,6 @@ const Links = ({menuLinks}) => {
           }
 
 
-
-          @media (max-width: 767px) {
-            .word h5 {
-              padding: 40px 0 10px 0px;
-            }
-          }
-          
-          // .card:hover .word {
-          //   display: none;
-          // }
-
-          // .overlay-container {
-          //   position: absolute;
-          //   top: 0;
-          //   bottom: 0;
-          //   left: 0;
-          //   right: 0;
-          //   height: 100%;
-          //   width: 100%;
-          //   opacity: 0;
-          //   transition: .6s ease;
-          //   background-image: linear-gradient(180deg, rgb(207, 160, 127, 0.8), rgb(136, 83, 61, 1));
-          //   z-index: 10;
-          //   border-radius: 25px;
-          // }
-
-          // .card:hover .overlay-container {
-          //   opacity: 1;
-          // }
-
-          // .content {
-          //   margin: 6%;
-          //   word-break: break-all;
-          //   color: #E9E6DD;
-          // }
-
-          // .content h4 {
-          //   font-family: Fraunces;
-          //   font-size: 1.2rem;
-          //   margin: 0;
-          //   padding: 0;
-          // }
-
-          // .content p {
-          //   margin: 3px 0 3px 0;
-          // }
-
-          // .content a {
-          //   position: absolute;
-          //   left: 15px;
-          //   bottom: 15px;
-          //   border: solid 1px #E9E6DD;
-          //   color: #E9E6DD;
-          //   font-weight: bold;
-          //   margin: 0;
-          //   padding: 3px 10px 3px 10px;
-          //   border-radius: 50px;
-          // }
-
-          // .content a:hover {
-          //   background-color: #fff;
-          //   border: none; 
-          //   color: #88533D;
-          //   transition: .6s ease;
-          // }
-
           nav ul {
             margin: 0;
             padding-left: 0;
@@ -192,8 +130,13 @@ const Links = ({menuLinks}) => {
             }
             nav li {
               display: inline-block;
-              margin-left: 10px;
-              margin-right: 10px;
+            }
+            .word h5 {
+              padding: 40px 0 10px 0px;
+            }
+            img,
+            .card {
+              width: 88vw;
             }
           }
           `}</style>
