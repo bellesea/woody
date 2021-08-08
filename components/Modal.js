@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { Dialog } from '@headlessui/react'
+import { Fragment, useState } from 'react'
+import { Transition, Dialog } from '@headlessui/react'
 
 export default function Modal({title, description, link, label, link2, label2, link3, label3, link4, label4, link5, label5, link6, label6, link7, label7, link8, label8, image2, image2Alt, image3, image3Alt, image4, image4Alt}) {
   let [isOpen, setIsOpen] = useState(false)
@@ -15,8 +15,6 @@ export default function Modal({title, description, link, label, link2, label2, l
     document.getElementById('__next').style.filter = 'blur(5px)';
   }
 
-    /* Use `initialFocus` to force initial focus to a specific ref. */
-
   return (
       <div>
         <div>
@@ -28,6 +26,7 @@ export default function Modal({title, description, link, label, link2, label2, l
               {title} +
           </button>
         </div>
+      <Transition appear show={isOpen} as={Fragment}>
         <Dialog
           onClose={closeModal}
           as="div"
@@ -54,6 +53,7 @@ export default function Modal({title, description, link, label, link2, label2, l
           <button onClick={closeModal}>close</button>
           </div>
         </Dialog>
+      </Transition>
 
           <style jsx>{`
             .button {
