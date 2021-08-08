@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -7,6 +8,7 @@
 *,
 *::before,
 *::after {
+  overflow: inherit !important;
   box-sizing: content-box;
 }
 
@@ -24,8 +26,8 @@
  */
 body {
   background-color: #E9E6DD;
-  color: #72767b;
-  font-family: "Lato", sans-serif;
+  color: #88533D;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.4px;
@@ -33,7 +35,7 @@ body {
   margin: 0;
 }
 a {
-  color: #72767b;
+  color: #88533D;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.35px;
@@ -55,14 +57,14 @@ h1 {
   font-family: 'Fraunces', serif;
   font-size: 42px;
   font-weight: normal;
-  color: #484d52;
+  color: #88533D;
   letter-spacing: 1.14px;
   margin-bottom: 1rem;
 }
 h2,
 h2 a {
   margin-bottom: 1rem;
-  color: #484d52;
+  color: #88533D;
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 0.85px;
@@ -71,7 +73,7 @@ h2 a {
 h3,
 h3 a {
   margin-bottom: 1rem;
-  color: #484d52;
+  color: #88533D;
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 0.52px;
@@ -128,4 +130,49 @@ footer {
   ul {
     padding-left: 20px;
   }
+}
+
+/* some hacky css */
+#headlessui-portal-root {
+  position: fixed;
+  top: 20vh;
+  z-index: 6;
+  background-color: #E9E6DD;
+  border: solid 2px #88533D;
+  border-radius: 25px;
+  align-items: center;
+  /* align-content: center; */
+  width: 80vw;
+  height: 60vh;
+  text-align: justify;
+  justify-content: center;
+  margin-left: 10vw;
+}
+
+#headlessui-portal-root div {
+  margin: 10px;
+}
+
+
+#headlessui-portal-root button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  border: solid 2px #88533D;
+  color: #88533D;
+  background-color: transparent;
+  border-radius: 25px;
+}
+
+#headlessui-portal-root button:hover {
+  background-color: #88533D;
+  color: #E9E6DD;
+  border-radius: 25px;
+}
+
+#headlessui-portal-root button p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 5px 10px 5px 10px;
 }

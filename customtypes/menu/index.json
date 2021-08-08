@@ -56,6 +56,120 @@
                 "label": "Link",
                 "placeholder": "Select a Link..."
               }
+            },
+            "image2": {
+              "config": {
+                "label": "",
+                "constraint": {},
+                "thumbnails": []
+              },
+              "type": "Image"
+            },
+            "label2": {
+              "config": {
+                "label": "",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+              },
+              "type": "StructuredText"
+            },
+            "link2": {
+              "config": {
+                "label": "",
+                "placeholder": "",
+                "select": "web",
+                "allowTargetBlank": false
+              },
+              "type": "Link"
+            },
+            "image3": {
+              "config": {
+                "label": "",
+                "constraint": {},
+                "thumbnails": []
+              },
+              "type": "Image"
+            },
+            "label3": {
+              "config": {
+                "label": "",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+              },
+              "type": "StructuredText"
+            },
+            "link3": {
+              "config": {
+                "label": "",
+                "placeholder": "",
+                "select": "web",
+                "allowTargetBlank": false
+              },
+              "type": "Link"
+            },
+            "image4": {
+              "config": {
+                "label": "",
+                "constraint": {},
+                "thumbnails": []
+              },
+              "type": "Image"
+            },
+            "label4": {
+              "config": {
+                "label": "",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+              },
+              "type": "StructuredText"
+            },
+            "link4": {
+              "config": {
+                "label": "",
+                "placeholder": "",
+                "select": "web",
+                "allowTargetBlank": false
+              },
+              "type": "Link"
+            },
+            "label5": {
+              "config": {
+                "label": "",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+              },
+              "type": "StructuredText"
+            },
+            "link5": {
+              "config": {
+                "label": "",
+                "placeholder": "",
+                "select": "web",
+                "allowTargetBlank": false
+              },
+              "type": "Link"
+            },
+            "label6": {
+              "config": {
+                "label": "",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+              },
+              "type": "StructuredText"
+            },
+            "link6": {
+              "config": {
+                "label": "",
+                "placeholder": "",
+                "select": "web",
+                "allowTargetBlank": false
+              },
+              "type": "Link"
             }
           },
           "label": "Menu Links"
