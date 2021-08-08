@@ -40,15 +40,15 @@ export default function Modal({title, description, link, label, link2, label2, l
               <p>{description}</p>
               <a href={link}><h4>{label}</h4></a>
               <div style={{ display: 'flex', flexDirection: 'row', gap: '10px' }}>
-                <div style={{ display: 'flex', flexDirection: 'col', gap: '1em' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '1em' }}>
                   <img src={image2} alt={image2Alt} />
                   <a href={link2}><h4>{label2}</h4></a>
                 </div>
-                <div style={{ display: 'flex', flexDirection: 'col', gap: '1em' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '1em' }}>
                   <img src={image3} alt={image3Alt} />
                   <a href={link3}><h4>{label3}</h4></a>
                 </div>
-                <div style={{ display: 'flex', flexDirection: 'col', gap: '1em' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '1em' }}>
                   <img src={image4} alt={image4Alt} />
                   <a href={link4}><h4>{label4}</h4></a>
                 </div>
