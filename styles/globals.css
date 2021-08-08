@@ -176,3 +176,8 @@ footer {
   font-size: 1rem;
   margin: 5px 10px 5px 10px;
 }
+
+/* #__next {
+  filter: blur(3px);
+} */
+

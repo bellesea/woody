@@ -13,6 +13,15 @@ function MyModal({title, description, link, label, link2, label2, link3, label3,
   function openModal() {
     setIsOpen(true)
   }
+
+  function blur() {
+    document.getElementById('__next').style.filter = 'blur(5px)';
+    document.getElementById('__next').style.overflow = 'hidden';
+  }
+
+  function unBlur() {
+    document.getElementById('__next').style.filter = 'blur(0px)';
+  }
     /* Use `initialFocus` to force initial focus to a specific ref. */
 
   return (
@@ -22,7 +31,8 @@ function MyModal({title, description, link, label, link2, label2, link3, label3,
               ref={completeButtonRef}
               type="button"
               className="button"
-              onClick={openModal}>
+              onClick={() => { openModal(); blur();}}
+              >
               {title} +
           </button>
         </div>
@@ -33,6 +43,7 @@ function MyModal({title, description, link, label, link2, label2, link3, label3,
               onClose={() => setIsOpen(false)}
               as="div"
               className="dialog-container"
+              data-backdrop="static"
               >
               <Dialog.Overlay />
               <div className="dialog-content">
@@ -51,7 +62,7 @@ function MyModal({title, description, link, label, link2, label2, link3, label3,
                   <a href={link7}><h4>{label7}</h4></a>
                   <a href={link8}><h4>{label8}</h4></a>
                 </div>
-              <button onClick={closeModal}><p>close</p></button>
+              <button onClick={() => { closeModal(); unBlur();}}><p>close</p></button>
               </div>
             </Dialog>
         </Transition>
