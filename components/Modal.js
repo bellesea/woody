@@ -115,10 +115,6 @@ function MyModal({title, description, link, label, link2, label2, link3, label3,
               .button {
                 margin: 0 0 13px 0;
               }
-
-              .inner {
-                max-height: 23vh !important;
-              }
             }
           `}</style>
       </div>
