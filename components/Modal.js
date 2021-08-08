@@ -14,14 +14,14 @@ function MyModal({title, description, link, label, link2, label2, link3, label3,
     setIsOpen(true)
   }
 
-  function blur() {
-    document.getElementById('__next').style.filter = 'blur(5px)';
-    document.getElementById('__next').style.overflow = 'hidden';
-  }
-
   function unBlur() {
     document.getElementById('__next').style.filter = 'blur(0px)';
   }
+
+  function blur() {
+    document.getElementById('__next').style.filter = 'blur(5px)';
+  }
+
     /* Use `initialFocus` to force initial focus to a specific ref. */
 
   return (
@@ -48,8 +48,8 @@ function MyModal({title, description, link, label, link2, label2, link3, label3,
               <Dialog.Overlay />
               <div className="dialog-content">
                 <Dialog.Title ><h3 className="title">{title}</h3></Dialog.Title>
-                <p>{description}</p>
                 <div className="inner">
+                  <p>{description}</p>
                   <a href={link}><h4>{label}</h4></a>
                   <img src={image2} alt={image2Alt} />
                   <a href={link2}><h4>{label2}</h4></a>
@@ -85,17 +85,6 @@ function MyModal({title, description, link, label, link2, label2, link3, label3,
               z-index: 5;
               text-align: justify;
               height: 60vh;
-            }
-
-            .dialog-content p {
-              z-index: 5;
-              text-align: justify;
-              max-height: 38vh !important;
-              overflow-y: auto !important;
-              overflow-x: hidden !important;
-              font-size: 15px;
-              line-height: 25px;
-              margin: 5px 0 5px 0;
             }
 
             .inner {
