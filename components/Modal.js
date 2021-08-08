@@ -1,14 +1,12 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 
-export default function MyModal({title, description, link, label, link2, label2, link3, label3, link4, label4, link5, label5, link6, label6, link7, label7, link8, label8, image2, image2Alt, image3, image3Alt, image4, image4Alt}) {
+export default function Modal({title, description, link, label, link2, label2, link3, label3, link4, label4, link5, label5, link6, label6, link7, label7, link8, label8, image2, image2Alt, image3, image3Alt, image4, image4Alt}) {
   let [isOpen, setIsOpen] = useState(false)
-  let completeButtonRef = useRef(null)
 
   
   function closeModal() {
     setIsOpen(false)
-    unBlur();
     document.getElementById('__next').style.filter = 'blur(0px)';
   }
 
@@ -23,7 +21,6 @@ export default function MyModal({title, description, link, label, link2, label2,
       <div>
         <div>
           <button
-              ref={completeButtonRef}
               type="button"
               className="button"
               onClick={openModal}
