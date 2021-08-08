@@ -1,13 +1,11 @@
-import React from "react";
-import Head from "next/head";
+import React from 'react'
+import HeadObject from './Head'
 import Header from './Header'
 
 const Layout = ({ children, menu }) => {
   return (
     <div>
-      <Head>
-        <title> Woody Keppel </title>
-      </Head>
+      <HeadObject />
       <main>{children}</main>
       <Header menu={menu} />
     </div>
