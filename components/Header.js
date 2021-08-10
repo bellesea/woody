@@ -59,6 +59,8 @@ const Links = ({menuLinks}) => {
                 label7={RichText.asText(menuLink.label7)}
                 link8={Link.url(menuLink.link8)}
                 label8={RichText.asText(menuLink.label8)}
+                image={menuLink.image.url}
+                imageAlt = {menuLink.image.alt}
                 image2={menuLink.image2.url}
                 image2Alt = {menuLink.image2.alt}
                 image3={menuLink.image3.url}
@@ -66,7 +68,7 @@ const Links = ({menuLinks}) => {
                 image4={menuLink.image4.url}
                 image4Alt = {menuLink.image4.alt}
                 /></a>
-                <img src={menuLink.image.url} alt={menuLink.image.alt} />
+                {/* <img src={menuLink.image.url} alt={menuLink.image.alt} /> */}
                 {/* <a className="word"><h5>{RichText.asText(menuLink.title)}</h5></a> */}
                 {/* <div className="overlay-container">
                   <div className="content">
@@ -92,12 +94,12 @@ const Links = ({menuLinks}) => {
             z-index: 1;
           }
           
-          .card > img {
+          .card > input {
             grid-row: 1 / -1;
             grid-column: 1;
           }
 
-          img {
+          input {
             max-width: 100%;
             border-radius: 25px;
             display: block;
@@ -131,10 +133,7 @@ const Links = ({menuLinks}) => {
             nav li {
               display: inline-block;
             }
-            .word h5 {
-              padding: 40px 0 10px 0px;
-            }
-            img,
+
             .card {
               width: 88vw;
             }

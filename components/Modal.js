@@ -1,7 +1,7 @@
 import { Fragment, useState } from 'react'
 import { Transition, Dialog } from '@headlessui/react'
 
-export default function Modal({title, description, link, label, link2, label2, link3, label3, link4, label4, link5, label5, link6, label6, link7, label7, link8, label8, image2, image2Alt, image3, image3Alt, image4, image4Alt}) {
+export default function Modal({image, imageAlt, title, description, link, label, link2, label2, link3, label3, link4, label4, link5, label5, link6, label6, link7, label7, link8, label8, image2, image2Alt, image3, image3Alt, image4, image4Alt}) {
   let [isOpen, setIsOpen] = useState(false)
 
   
@@ -17,15 +17,16 @@ export default function Modal({title, description, link, label, link2, label2, l
 
   return (
       <div>
-        <div>
-          <button
+          {/* <button
               type="button"
-              className="button"
+              class="open-button"
+              // className="button"
               onClick={openModal}
               >
-              {title} +
-          </button>
-        </div>
+              <img src={image} alt={imageAlt} />
+          </button> */}
+          <input type="image" id="button" src={image} alt={title} onClick={openModal}/> 
+          <button id="title" onClick={openModal}>{title} +</button>
       <Transition appear show={isOpen} as={Fragment}>
         <Dialog
           onClose={closeModal}
@@ -50,23 +51,66 @@ export default function Modal({title, description, link, label, link2, label2, l
               <a href={link7}><h4>{label7}</h4></a>
               <a href={link8}><h4>{label8}</h4></a>
             </div>
-          <button onClick={closeModal}>close</button>
+          <button className="button" onClick={closeModal}>close</button>
           </div>
         </Dialog>
       </Transition>
 
           <style jsx>{`
+          #button {
+            width: 100% !important;
+            border-radius: 25px;
+            display: block;
+            z-index: 4;
+          }
+
+          img {
+            max-width: 100%;
+            border-radius: 25px;
+            display: block;
+            z-index: 2;
+          }
             .button {
               z-index: 4;
               margin: 0 0 13px 13px;
               padding: 5px 10px 5px 10px;
               background-color: transparent;
-              border: solid 1px #E9E6DD;
+              border: solid 1px #88533D;
               border-radius: 25px;
               font-family: Inter;
               font-weight: 600;
-              font-size: 15px;
+              font-size: 1rem;
               color: #E9E6DD;
+              cursor: pointer;
+            }
+
+            .button:hover {
+              border: none;
+              background: #88533D;
+              color: #E9E6DD;
+            }
+
+            #title {
+              position: absolute;
+              bottom: 20px;
+              left: 20px;
+              justify-self: start;
+              z-index: 1;
+              border-radius: 25px;
+              color: #E9E6DD;
+              padding: 5px 10px 5px 10px;
+              border: solid 1px #E9E6DD;
+              margin: 0;
+              background: transparent;
+              font-size: 1rem;
+              cursor: pointer;
+              font-weight: 700;
+            }
+
+            #title:hover {
+              border: none;
+              background: #E9E6DD;
+              color: #88533D;
             }
 
             .dialog-content {
@@ -77,7 +121,7 @@ export default function Modal({title, description, link, label, link2, label2, l
 
             .inner {
               z-index: 5;
-              text-align: justify;
+              text-align: left;
               max-height: 38vh !important;
               overflow-y: auto !important;
               overflow-x: hidden !important;
