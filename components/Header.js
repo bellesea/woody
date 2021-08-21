@@ -101,7 +101,7 @@ const Links = ({menuLinks}) => {
 
           input {
             max-width: 100%;
-            border-radius: 25px;
+            border-radius: 10px;
             display: block;
             z-index: 2;
           }
@@ -113,7 +113,7 @@ const Links = ({menuLinks}) => {
             z-index: 3;
             background-image: linear-gradient(180deg, rgb(196, 196, 196, 0), rgb(43, 43, 43, 0.7));
             width: 100%;
-            border-radius: 0 0 25px 25px;
+            border-radius: 0 0 10px 10px;
           }
 
 

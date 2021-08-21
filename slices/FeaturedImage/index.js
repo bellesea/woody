@@ -23,7 +23,7 @@ const FeaturedImage = ({ slice }) => (
       .highlight {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 25px;
+        column-gap: 10px;
       }
       @media (max-width: 767px) {
         .highlight {

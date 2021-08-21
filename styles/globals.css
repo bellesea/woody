@@ -135,24 +135,35 @@ footer {
 /* some hacky css */
 #headlessui-portal-root {
   position: fixed;
-  top: 20vh;
+  top: 5vh;
   z-index: 6;
+  color: #88533D;
   background-color: #E9E6DD;
   border: solid 2px #88533D;
-  border-radius: 25px;
+  border-radius: 10px;
   align-items: center;
   /* align-content: center; */
-  width: 80vw;
-  height: 60vh;
+  width: 60vw;
+  height: 90vh;
   text-align: justify;
   justify-content: center;
-  margin-left: 10vw;
+  margin-left: 20vw;
+}
+
+@media (max-width: 767px) {
+  #headlessui-portal-root {
+    width: 90vw;
+    margin-left: 5vw;
+  }
 }
 
 #headlessui-portal-root div {
   margin: 10px;
 }
 
+#headlessui-portal-root img {
+  width: 100%;
+}
 
 #headlessui-portal-root button {
   position: absolute;
@@ -161,13 +172,13 @@ footer {
   border: solid 2px #88533D;
   color: #88533D;
   background-color: transparent;
-  border-radius: 25px;
+  border-radius: 10px;
 }
 
 #headlessui-portal-root button:hover {
   background-color: #88533D;
   color: #E9E6DD;
-  border-radius: 25px;
+  border-radius: 10px;
 }
 
 #headlessui-portal-root button p {

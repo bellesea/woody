@@ -38,7 +38,7 @@ const Header = ({ slice }) => (
 
           .description {
             font-size: 1em;
-            margin: 25px;
+            margin: 10px;
           }
         }
     `}</style>

@@ -15,6 +15,36 @@ export default function Modal({image, imageAlt, title, description, link, label,
     document.getElementById('__next').style.filter = 'blur(5px)';
   }
 
+  if ( link.length === 0 && label.length === 0 ) {
+    link = ''
+    label = ''
+  }
+
+  const img2 = image2 === "" ?  null : <img src={image2} alt={image2Alt} />;
+
+  const desc = description === "" ?  null : <p>{description}</p>;
+
+  const lbl = label === "" ?  null : <a href={link}><h4>{label}</h4></a>;
+
+  const lbl2 = label2 === "" ?  null : <a href={link2}><h4>{label2}</h4></a>;
+
+  const lbl3 = label3 === "" ?  null : <a href={link3}><h4>{label3}</h4></a>;
+
+  const lbl4 = label4 === "" ?  null : <a href={link4}><h4>{label4}</h4></a>;
+
+  const lbl5 = label5 === "" ?  null : <a href={link5}><h4>{label5}</h4></a>;
+
+  const lbl6 = label6 === "" ?  null : <a href={link6}><h4>{label6}</h4></a>;
+
+  const lbl7 = label7 === "" ?  null : <a href={link7}><h4>{label7}</h4></a>;
+
+  const lbl8 = label8 === "" ?  null : <a href={link8}><h4>{label8}</h4></a>;
+
+  const img3 = image3 === "" ?  null : <img src={image3} alt={image3Alt} />;
+
+  const img4 = image4 === "" ?  null : <img src={image4} alt={image4Alt} />; 
+
+
   return (
       <div>
           {/* <button
@@ -36,20 +66,20 @@ export default function Modal({image, imageAlt, title, description, link, label,
         >
           <Dialog.Overlay />
           <div className="dialog-content">
-            <Dialog.Title ><h3 className="title">{title}</h3></Dialog.Title>
+            <Dialog.Title ><h2 className="title">{title}</h2></Dialog.Title>
             <div className="inner">
-              <p>{description}</p>
-              <a href={link}><h4>{label}</h4></a>
-              <img src={image2} alt={image2Alt} />
-              <a href={link2}><h4>{label2}</h4></a>
-              <img src={image3} alt={image3Alt} />
-              <a href={link3}><h4>{label3}</h4></a>
-              <img src={image4} alt={image4Alt} />
-              <a href={link4}><h4>{label4}</h4></a>
-              <a href={link5}><h4>{label5}</h4></a>
-              <a href={link6}><h4>{label6}</h4></a>
-              <a href={link7}><h4>{label7}</h4></a>
-              <a href={link8}><h4>{label8}</h4></a>
+              {desc}
+              {lbl}
+              {img2}
+              {lbl2}
+              {img3}
+              {lbl3}
+              {img4}
+              {lbl4}
+              {lbl5}
+              {lbl6}
+              {lbl7}
+              {lbl8}
             </div>
           <button className="button" onClick={closeModal}>close</button>
           </div>
@@ -59,24 +89,24 @@ export default function Modal({image, imageAlt, title, description, link, label,
           <style jsx>{`
           #button {
             width: 100% !important;
-            border-radius: 25px;
+            border-radius: 10px;
             display: block;
             z-index: 4;
           }
 
           img {
             max-width: 100%;
-            border-radius: 25px;
+            border-radius: 10px;
             display: block;
             z-index: 2;
           }
             .button {
               z-index: 4;
-              margin: 0 0 13px 13px;
+              margin: 0 2vw 0px 0px;
               padding: 5px 10px 5px 10px;
               background-color: transparent;
               border: solid 1px #88533D;
-              border-radius: 25px;
+              border-radius: 10px;
               font-family: Inter;
               font-weight: 600;
               font-size: 1rem;
@@ -96,12 +126,14 @@ export default function Modal({image, imageAlt, title, description, link, label,
               left: 20px;
               justify-self: start;
               z-index: 1;
-              border-radius: 25px;
-              color: #E9E6DD;
+              border-radius: 10px;
+              color: #88533D;
               padding: 5px 10px 5px 10px;
-              border: solid 1px #E9E6DD;
+              // border: solid 1px #E9E6DD;
+              border: none;
+              background-color: rgb(250, 250, 250, 0.6);
               margin: 0;
-              background: transparent;
+              // background: transparent;
               font-size: 1rem;
               cursor: pointer;
               font-weight: 700;
@@ -116,18 +148,23 @@ export default function Modal({image, imageAlt, title, description, link, label,
             .dialog-content {
               z-index: 5;
               text-align: justify;
-              height: 60vh;
+              height: 670vh;
             }
 
             .inner {
               z-index: 5;
               text-align: left;
-              max-height: 38vh !important;
+              max-height: 70vh !important;
               overflow-y: auto !important;
               overflow-x: hidden !important;
               font-size: 15px;
-              line-height: 25px;
-              margin: 5px 0 5px 0;
+              line-height: 10px;
+              border-radius: 10px;
+              margin: 3px 0 3px 0;
+            }
+
+            .inner img {
+              min-width: 50vw;
             }
             
             img {
@@ -142,6 +179,8 @@ export default function Modal({image, imageAlt, title, description, link, label,
 
             .title {
               font-family: Fraunces;
+              color: #88533D;
+              margin-left: 7px;
             }
             @media (max-width: 767px) {
               .button {
