@@ -15,7 +15,7 @@ const BannerSlice = ({ slice }) => (
     </div>
     <style jsx>{`
       .homepage-banner {
-        font-family: 'Lato', sans-serif;
+        font-family: 'Inter', sans-serif;
         margin: -70px 0 80px;
         padding: 6em 0 6em;
         background-position: center center;
