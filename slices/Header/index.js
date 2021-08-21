@@ -13,7 +13,8 @@ const Header = ({ slice }) => (
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          margin-top: 10vh;
+          margin-top: 5vh;
+          margin-bottom: 5vh;
         }
 
         .title {
