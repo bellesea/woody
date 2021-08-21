@@ -105,19 +105,19 @@ export default function Modal({image, imageAlt, title, description, link, label,
               margin: 0 2vw 0px 0px;
               padding: 5px 10px 5px 10px;
               background-color: transparent;
-              border: solid 1px #88533D;
+              border: solid 1px #E59500;
               border-radius: 10px;
               font-family: Inter;
               font-weight: 600;
               font-size: 1rem;
-              color: #E9E6DD;
+              color: #840032;
               cursor: pointer;
             }
 
             .button:hover {
               border: none;
-              background: #88533D;
-              color: #E9E6DD;
+              background: #840032;
+              color: #840032;
             }
 
             #title {
@@ -127,11 +127,12 @@ export default function Modal({image, imageAlt, title, description, link, label,
               justify-self: start;
               z-index: 1;
               border-radius: 10px;
-              color: #88533D;
+              color: #002642;
               padding: 5px 10px 5px 10px;
               // border: solid 1px #E9E6DD;
               border: none;
-              background-color: rgb(250, 250, 250, 0.6);
+              background-color: rgb(255, 255, 255, 0.4); 
+              backdrop-filter: blur(100px);
               margin: 0;
               // background: transparent;
               font-size: 1rem;
@@ -141,8 +142,8 @@ export default function Modal({image, imageAlt, title, description, link, label,
 
             #title:hover {
               border: none;
-              background: #E9E6DD;
-              color: #88533D;
+              background: #840032;
+              color: #E59500;
             }
 
             .dialog-content {
@@ -172,14 +173,14 @@ export default function Modal({image, imageAlt, title, description, link, label,
             }
 
             .button:hover {
-              background-color: #E9E6DD;
-              color: #88533D;
+              background-color: #840032;
+              color: #E59500;
               pointer: cursor;
             }
 
             .title {
               font-family: Fraunces;
-              color: #88533D;
+              color: #E59500;
               margin-left: 7px;
             }
             @media (max-width: 767px) {

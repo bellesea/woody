@@ -18,7 +18,7 @@ const Header = ({ slice }) => (
 
         .title {
           font-size: 3.5em;
-          color: #88533D;
+          color: #E59500;
           margin: 0;
           padding: 0;
           overflow: none;
@@ -28,7 +28,7 @@ const Header = ({ slice }) => (
           margin: 40px;
           font-size: 1.3em;
           padding: 0;
-          color: #CFA07F;
+          color: #E5DADA;
         }
 
         @media (max-width: 768px) {

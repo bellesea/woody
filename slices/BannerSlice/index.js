@@ -53,7 +53,7 @@ const BannerSlice = ({ slice }) => (
         padding: 15px 40px;
       }
       a:hover {
-        background: #c8c9cb;
+        background: #840032;
       }
       @media (max-width: 767px) {
         .homepage-banner {
