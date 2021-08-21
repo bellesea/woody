@@ -17,7 +17,7 @@ const QuoteSlice = ({ slice }) => (
     <style jsx>{`
       .quote blockquote {
         display: block;
-        font-family: 'Lora', Serif; 
+        font-family: "Fraunces", serif; 
         font-size: 36px;
         font-style: italic;
         font-weight: normal; 
@@ -30,7 +30,7 @@ const QuoteSlice = ({ slice }) => (
       .quote blockquote:after {
         color: #e9e9e9;
         content: open-quote;
-        font-family: 'Lora', Serif;
+        font-family: "Fraunces", serif;
         font-size: 2.5em;
         font-weight: 900;
         line-height: 0.1em;

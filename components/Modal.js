@@ -107,7 +107,7 @@ export default function Modal({image, imageAlt, title, description, link, label,
               background-color: transparent;
               border: solid 1px #E59500;
               border-radius: 10px;
-              font-family: Inter;
+              font-family: "Inter", sans-serif;
               font-weight: 600;
               font-size: 1rem;
               color: #840032;
@@ -179,7 +179,7 @@ export default function Modal({image, imageAlt, title, description, link, label,
             }
 
             .title {
-              font-family: Fraunces;
+              font-family: "Fraunces", serif;
               color: #E59500;
               margin-left: 7px;
             }
