@@ -27,7 +27,7 @@ const ImageGallery = ({ slice }) => (
         margin-bottom: 3.75rem;
         padding: 20px;
         color: #72767b;
-        font-family: 'Lato', sans-serif;
+        font-family: "Inter", sans-serif;
         font-size: 16px;
         font-weight: 400;
         letter-spacing: 0.4;
