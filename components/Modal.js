@@ -40,9 +40,9 @@ export default function Modal({image, imageAlt, title, description, link, label,
 
   const lbl8 = label8 === "" ?  null : <a href={link8}><h4>{label8}</h4></a>;
 
-  const img3 = image3 === "" ?  null : <img src={image3} alt={image3Alt} />;
+  const img3 = image3Alt === "" ?  null : <img src={image3} alt={image3Alt} />;
 
-  const img4 = image4 === "" ?  null : <img src={image4} alt={image4Alt} />; 
+  const img4 = image4Alt === "" ?  null : <img src={image4} alt={image4Alt} />; 
 
 
   return (
@@ -71,15 +71,15 @@ export default function Modal({image, imageAlt, title, description, link, label,
               {desc}
               {lbl}
               {img2}
-              {lbl2}
-              {img3}
-              {lbl3}
-              {img4}
               {lbl4}
               {lbl5}
               {lbl6}
               {lbl7}
               {lbl8}
+              {lbl2}
+              {img3}
+              {lbl3}
+              {img4}
             </div>
           <button className="button" onClick={closeModal}>close</button>
           </div>

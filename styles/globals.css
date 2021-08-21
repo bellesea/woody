@@ -151,6 +151,10 @@ footer {
   margin-left: 20vw;
 }
 
+#headlessui-portal-root div {
+  line-height: 20px;
+}
+
 @media (max-width: 767px) {
   #headlessui-portal-root {
     width: 90vw;
