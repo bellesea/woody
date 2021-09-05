@@ -14,6 +14,7 @@ export default function HeadObject({children}) {
             <meta name="description" content={description} />
             <meta name="keywords" content={keywords} />
             <meta name="author" content={author} />
+            <link rel="icon" href="/favicon.ico" type="image/x-icon" />
             {children}
         </Head>
     )
