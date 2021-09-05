@@ -5,7 +5,7 @@
 
 ## Develop
 
-This website is built with Next.js using Prismic as a CMS.[Prismic + Next.js documentation.](https://prismic.io/docs/technologies/home-prismic-and-nextjs)
+This website is built with [Next.js using Prismic](https://prismic.io/docs/technologies/home-prismic-and-nextjs)as a CMS.
 
 1. Clone the repository
 ```sh
