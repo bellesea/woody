@@ -1,19 +1,24 @@
-# Prismic Slice Machine & Next.js Boilerplate
-> [Next.js](https://nextjs.org/) & Slice Machine boilerplate project with content managed in [Prismic](https://prismic.io) and components built with Slice Machine
+<h1><div style="display: flex; flex-direction: row;">Website for Woody Keppel<img src="https://user-images.githubusercontent.com/72365100/132117401-569c3f41-0de0-4345-987c-c568a0851e60.png" width="50" height="50" alt="a man's face">
+</div></h1>
 
-## Check out the dedicated article to get this project up and running
-> [Learn how to use this boilerplate to build a project from scratch](https://prismic.io/docs/technologies/tutorial-series-introduction-nextjs)
+> Woody Keppel is an actor, comedian, and songwriter known for Moving Targets (1999), Axcellerator (2020) and Pressure Point (1997).
 
-### Learn more about using Prismic with Next.js
+## Develop
 
-[Prismic + Next.js documentation](https://prismic.io/docs/technologies/home-prismic-and-nextjs).
+1. Clone the repository
+```sh
+git clone https://github.com/bellesea/woody.git woody-website
+cd woody-website
+```
+2. Install dependencies
+```sh
+yarn
+# then, start the dev server
+yarn dev
+```
+3. Check it out at http://localhost:3000
 
-### License
+---
 
-g
-Copyright 2021 [Prismic](http://prismic.io/).
-
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use this project except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0.
-
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+Licensed under the [MIT License](LICENSE).
 
