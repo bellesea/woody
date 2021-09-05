@@ -12,9 +12,9 @@ cd woody-website
 ```
 2. Install dependencies
 ```sh
-yarn
+npm install
 # then, start the dev server
-yarn dev
+npm run dev
 ```
 3. Check it out at http://localhost:3000
 
