@@ -5,6 +5,8 @@
 
 ## Develop
 
+This website is built with Next.js using Prismic as a CMS.
+
 1. Clone the repository
 ```sh
 git clone https://github.com/bellesea/woody.git woody-website
