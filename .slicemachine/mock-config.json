@@ -6,7 +6,19 @@
     "FeaturedImage": {},
     "TextSlice": {},
     "QuoteSlice": {},
-    "Header": {}
+    "Header": {},
+    "Footer": {
+      "default-slice": {
+        "primary": {
+          "footer": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    }
   },
   "_cts": {
     "page": {},
@@ -26,6 +38,7 @@
           }
         }
       }
-    }
+    },
+    "Footer": {}
   }
 }

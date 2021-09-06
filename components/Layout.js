@@ -2,6 +2,7 @@ import React from 'react'
 import HeadObject from './Head'
 import Header from './Header'
 import MyModal from "./Modal"
+import Footer from '../slices/Footer/index'
 
 const Layout = ({ children, menu }) => {
   return (
@@ -9,6 +10,7 @@ const Layout = ({ children, menu }) => {
       <HeadObject />
       <main>{children}</main>
       <Header menu={menu} />
+      <Footer />
     </div>
   );
 };

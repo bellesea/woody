@@ -26,7 +26,7 @@ const Header = ({ slice }) => (
         }
 
         .description {
-          margin: 40px;
+          margin: 10px;
           font-size: 1.3em;
           padding: 0;
           color: #E5DADA;

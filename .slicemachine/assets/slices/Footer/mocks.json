@@ -1,0 +1,17 @@
+[
+  {
+    "variation": "default-slice",
+    "name": "Default slice",
+    "slice_type": "footer",
+    "items": [],
+    "primary": {
+      "footer": [
+        {
+          "type": "paragraph",
+          "text": "Fugiat in laboris exercitation mollit tempor.",
+          "spans": []
+        }
+      ]
+    }
+  }
+]
