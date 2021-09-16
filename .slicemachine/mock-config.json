@@ -36,6 +36,54 @@
             "patternType": "PARAGRAPH",
             "blocks": 1
           }
+        },
+        "label": {
+          "config": {
+            "patternType": "PARAGRAPH",
+            "blocks": 1
+          }
+        },
+        "label4": {
+          "config": {
+            "patternType": "PARAGRAPH",
+            "blocks": 1
+          }
+        },
+        "label5": {
+          "config": {
+            "patternType": "PARAGRAPH",
+            "blocks": 1
+          }
+        },
+        "label6": {
+          "config": {
+            "patternType": "PARAGRAPH",
+            "blocks": 1
+          }
+        },
+        "label7": {
+          "config": {
+            "patternType": "PARAGRAPH",
+            "blocks": 1
+          }
+        },
+        "label8": {
+          "config": {
+            "patternType": "PARAGRAPH",
+            "blocks": 1
+          }
+        },
+        "label2": {
+          "config": {
+            "patternType": "PARAGRAPH",
+            "blocks": 1
+          }
+        },
+        "label3": {
+          "config": {
+            "patternType": "PARAGRAPH",
+            "blocks": 1
+          }
         }
       }
     },

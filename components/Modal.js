@@ -71,12 +71,12 @@ export default function Modal({image, imageAlt, title, description, link, label,
               {desc}
               {lbl}
               {img2}
+              {lbl2}
               {lbl4}
               {lbl5}
               {lbl6}
               {lbl7}
               {lbl8}
-              {lbl2}
               {img3}
               {lbl3}
               {img4}
